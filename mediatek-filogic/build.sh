@@ -26,7 +26,7 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 
 
 # 判断是否需要编译 Docker 插件
-if [ "$INCLUDE_DOCKER" = "yes" ]; then
+if [ "$INCLUDE_DOCKER" = "no" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
     echo "Adding package: luci-i18n-dockerman-zh-cn"
 fi
